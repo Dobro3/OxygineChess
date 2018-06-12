@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<resources>
+	<set path = "images" />
+	<atlas>
+		<image black_box="black_box.png"/>
+		<image white_box="white_box.png"/>
+	</atlas>
+</resources>

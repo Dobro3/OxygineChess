@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<resources>
+	<set path = "images" />
+	<atlas>
+		<image file="BPawn.png"/>		
+		<image file="WPawn.png"/>		
+		<image file="black_box.png"/>
+		<image file="white_box.png"/>
+	</atlas>
+	
+	<set path = "fonts" />
+	<font file="main.fnt" />	
+</resources>
