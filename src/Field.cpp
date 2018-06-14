@@ -1,7 +1,6 @@
 #include "Field.h"
 
 
-
 Field::Field()
 {
 	Figure = NULL;
@@ -43,6 +42,18 @@ Field::Field(int x, int y)
 	}
 	X = x;
 	Y = y;
+	EventCallback cb = CLOSURE(this, &Field::fieldClick);
+	this->addEventListener(TouchEvent::CLICK, cb);
+}
+void Field::fieldClick(Event *e)
+{
+	makeBright();
+}
+
+void Field::makeBright()
+{
+	bckgrnd->setColor(Color::White);
+	bckgrnd->addTween(Sprite::TweenColor(Color::Green), 2000, 1, true);
 }
 
 int Field::getXpos()

@@ -10,8 +10,7 @@ Deck::Deck()
 		{
 			field[i][j] = new Field(i, j);
 			addChild(field[i][j]);
-			EventCallback cb = CLOSURE(this, &Deck::fieldClicked);
-			field[i][j]->addEventListener(TouchEvent::CLICK, cb);
+			
 			//myEvent event(field[i][j]);
 			//dispatchEvent(&event);
 		}
@@ -23,10 +22,10 @@ Deck::~Deck()
 }
 
 
-void Deck::fieldClicked(Event *ev)
-{	
-	
-	spTextField text = new TextField();
+void Deck::fieldClicked(int x, int y)
+{
+	field[x][y]->makeBright();
+	/*spTextField text = new TextField();
 	//attach it as child to button
 	text->attachTo(this);
 	//centered in button
@@ -36,7 +35,7 @@ void Deck::fieldClicked(Event *ev)
 	text->setText(ev->currentTarget->getName());
 	_text->addTween(Actor::TweenScale(1.1f), 500, 1, true);
 	_text = text;
-	//myEvent* event = static_cast<myEvent*>(ev);
+	//myEvent* event = static_cast<myEvent*>(ev);*/
 }
 
 void Deck_init()

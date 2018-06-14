@@ -12,9 +12,11 @@ public:
 	int Y;
 	ChPiece *Figure;
 	spSprite bckgrnd;
-
+	
 	Field();
 	Field(int x, int y );
+	void makeBright();
+	void fieldClick(Event *e);
 	int getXpos();
 	int getYpos();
 	~Field();

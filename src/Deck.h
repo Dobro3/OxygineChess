@@ -8,7 +8,7 @@ public:
 	Deck();
 	~Deck();
 
-	void fieldClicked(Event *event);
+	void fieldClicked(int x, int y);
 	
 	
 };

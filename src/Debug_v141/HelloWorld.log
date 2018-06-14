@@ -1,12 +1,4 @@
-﻿  example.cpp
-  main.cpp
-  ChPiece.cpp
-  Deck.cpp
-  Field.cpp
-  myEvent.cpp
-c:\users\dobriy\desktop\ooxy\oxygine-framework\examples\oxyginechess\src\myevent.h(14): warning C4005: eventID: изменение макроопределения
-  c:\users\dobriy\desktop\ooxy\oxygine-framework\oxygine\src\oxygine\eventdispatcher.h(18): note: см. предыдущее определение "eventID"
-  Создание кода...
+﻿  Field.cpp
 example.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/INCREMENTAL:NO"
   oxygine_d.lib(jerror.obj) : найден .netmodule MSIL или модуль, откомпилированный с параметром /GL; перезапускается компоновка с параметром /LTCG; добавьте /LTCG в командную строку компоновки для повышения производительности компоновщика
 example.obj : warning LNK4075: эх єўшЄ√трхЄё  "/EDITANDCONTINUE" шч-чр ёяхЎшЇшърЎшш "/INCREMENTAL:NO"
